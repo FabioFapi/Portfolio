@@ -39,6 +39,11 @@ const enTranslations = {
       description: 'Small database to connect the FormPage and the LandingPage via REST API.',
       technologies: 'Technologies: Node.js, MongoDB',
     },
+    forU: {
+      title: '4U',
+      description: '4U is designed just for you, helping you keep everything organized in one place. With powerful tools and a user-friendly interface, 4U lets you manage your budget, track your watch list, and store your media files with ease.',
+      technologies: 'Technologies: dart, flutter, python , sqlite',
+    },
   },
   contact: {
     title: 'Get In Touch',
@@ -89,6 +94,11 @@ const itTranslations = {
       title: 'Womblab Repository',
       description: 'Piccolo database per connettere FormPage e LandingPage tramite API REST.',
       technologies: 'Tecnologie: Node.js, MongoDB',
+    },
+    forU: {
+      title: '4U',
+      description: '4U è progettato solo per te, aiutandoti a mantenere tutto organizzato in un unico posto. Con strumenti potenti e un\'interfaccia intuitiva, 4U ti consente di gestire il tuo budget, tenere traccia dell\'elenco di controllo e archiviare facilmente i tuoi file multimediali.',
+      technologies: 'Tecnologie: dart, flutter, python , sqlite',
     },
   },
   contact: {

@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import mockupImage from "../assets/mockup.png";
 import repoImage from "../assets/repos.png";
+import phoneImage from "../assets/phone.png";
 
 const Portfolio = () => {
   const { t } = useTranslation();
@@ -47,6 +48,15 @@ const Portfolio = () => {
       videoUrl: null, // Will be replaced with actual video
       link: "https://github.com/FabioFapi/womblab-repository",
     },
+    {
+      id: "forU",
+      title: t("portfolio.forU.title"),
+      description: t("portfolio.forU.description"),
+      technologies: t("portfolio.forU.technologies"),
+      imageUrl: phoneImage,
+      videoUrl: null, 
+      link: "https://github.com/FabioFapi/4U",
+    }
   ];
 
   const ProjectCard = ({ project }) => (
