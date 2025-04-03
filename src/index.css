@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #121212;
+  --secondary: #1e1e1e;
+  --accent: #6366f1;
+  --text: #f3f4f6;
+  --text-secondary: #a1a1aa;
+}
+
+body {
+  @apply bg-primary text-text font-sans;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.btn {
+  @apply px-6 py-3 rounded-md font-medium transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-accent text-white hover:bg-opacity-90;
+}
+
+.btn-outline {
+  @apply border border-accent text-accent hover:bg-accent hover:bg-opacity-10;
+}
+
+.nav-link {
+  @apply relative px-3 py-2 text-text-secondary hover:text-text transition-colors duration-300;
+}
+
+.nav-link.active {
+  @apply text-accent;
+}
+
+.nav-link.active::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-accent rounded-full;
+}
+
+.card {
+  @apply bg-secondary rounded-xl p-6 shadow-lg transition-all duration-300 hover:shadow-xl;
+}
+
+.input {
+  @apply bg-secondary border border-gray-700 rounded-md px-4 py-3 w-full text-text focus:outline-none focus:ring-2 focus:ring-accent;
+}
+
+/* Animations */
+.page-transition {
+  @apply animate-fade-in;
+}
+
+.stagger-item {
+  @apply opacity-0;
+}
